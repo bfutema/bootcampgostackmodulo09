@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom';
 import Notifications from '~/components/Notifications';
 
 import logo from '~/assets/logo-purple.svg';
-
 import { Container, Content, Profile } from './styles';
 
 export default function Header() {
@@ -29,10 +28,10 @@ export default function Header() {
             </div>
             <img
               src={
-                profile.avatar.url ||
+                (profile.avatar && profile.avatar.url) ||
                 'https://api.adorable.io/avatars/50/abott@adorable.png'
               }
-              alt={profile.name}
+              alt="Diego Fernandes"
             />
           </Profile>
         </aside>

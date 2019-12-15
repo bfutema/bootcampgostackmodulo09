@@ -74,6 +74,7 @@ export default function Dashboard() {
           <MdChevronRight size={36} color="#FFF" />
         </button>
       </header>
+
       <ul>
         {schedule.map(time => (
           <Time key={time.time} past={time.past} available={!time.appointment}>
